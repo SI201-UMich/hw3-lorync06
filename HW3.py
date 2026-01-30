@@ -57,7 +57,7 @@ class CouponDispenser:
         if name in self.customer_roster:
             i = self.customer_roster.index(name)
             coupon = self.coupon_cards[self.issued_indices[i]]
-            return "That name already has a coupon: {coupon}"
+            return "That name already has a coupon: " + coupon 
         index = random.randrange(len(self.coupon_cards))
      
 
@@ -132,7 +132,7 @@ class CouponDispenser:
             for index in self.issued_indices:
                 if index == i:
                     count += 1
-            print(self.coupon_cards[i] + " distribution count " + str(count) + ".")
+            print(self.coupon_cards[i] + " distribution count: " + str(count) + ".")
         """
         Extra credit:
         Print coupon distribution counts (NO sorting) using ONLY lists.
@@ -160,10 +160,10 @@ def main():
       - After exit, call tally_distribution() to print the distribution in the terminal
     """
     coupon_cards = [
-        "10% off ",
-        "Free small coffee ",
-        "Buy 1 get 1 half off ",
-        "Free extra espresso shot ",
+        "10% off",
+        "Free small coffee",
+        "Buy 1 get 1 half off",
+        "Free extra espresso shot",
     ]
 
     # Uncomment the lines below as you implement each function.
