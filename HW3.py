@@ -29,7 +29,7 @@ class CouponDispenser:
         self.coupon_cards = coupon_cards
         customer_cards = []
         issued_indices = []
-        #edit
+        
         """
         Initialize a new CouponDispenser object.
 
@@ -40,6 +40,7 @@ class CouponDispenser:
         pass
 
     def __str__(self):
+        return "|".join(self.coupon_cards)
         """
         Return a single string with all coupons in coupon_cards joined by pipes ('|').
         If coupon_cards is empty, return an empty string "".
