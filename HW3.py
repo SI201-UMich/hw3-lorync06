@@ -123,6 +123,16 @@ class CouponDispenser:
         pass
 
     def tally_distribution(self):
+
+        if not self.issued_indices:
+            print("Empty")
+            return
+        for i in range(len(self.coupon_cards)):
+            count = 0
+            for index in self.issued_indices:
+                if index == i:
+                    count += 1
+            print(self.coupon_cards[i] + "distribution count:" + count + ".")
         """
         Extra credit:
         Print coupon distribution counts (NO sorting) using ONLY lists.
