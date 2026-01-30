@@ -91,7 +91,7 @@ class CouponDispenser:
                 for i in range(len(self.customer_roster)):
                     name = self.customer_roster[i]
                     coupon = self.coupon_cards[self.issued_indices[i]]
-                    print (name + ':'+ coupon)
+                    print (name + ': '+ coupon)
             else:
                 pieces = user_input.split(",")
                 for text in pieces:
@@ -449,6 +449,6 @@ def test():
 
 
 if __name__ == "__main__":
-    main()
-    # test()
+    # main()
+    test()
 
