@@ -154,8 +154,8 @@ class CouponDispenser:
 def main():
     """
     Driver function:
-      - Define the coupon_cards list (example coupons below)
-      - Create a CouponDispenser
+      - Define the coupon cards list (example coupons below)
+      - Create a Coupon Dispenser
       - Start the interaction via distribute_session()
       - After exit, call tally_distribution() to print the distribution in the terminal
     """
